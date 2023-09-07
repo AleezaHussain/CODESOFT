@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc-area">
+        <form >
+          <div class="display">
+          <input type="text" name = "result" >
+        </div>
+
+        <div>
+          <input type="button" value="AC" onclick="result.value =''">
+          <input type="button" value="DEL" onclick="result.value = result.value.slice(0, -1)">
+
+          <input type="button" value="/" onclick="result.value +='/'">
+          <input type="button" value="." onclick="result.value +='.'">
+        </div>
+
+        <div>
+          <input type="button" value="7" onclick="result.value += '7'">
+          <input type="button" value="8" onclick="result.value += '8'">
+          <input type="button" value="9" onclick="result.value +='9'">
+          <input type="button" value="+" onclick="result.value +='+'">
+        </div>
+
+        <div>
+          <input type="button" value="4" onclick="result.value +='4'">
+          <input type="button" value="5" onclick="result.value +='5'">
+          <input type="button" value="6" onclick="result.value +='6'">
+          <input type="button" value="-" onclick="result.value +='-'">
+        </div>
+
+        <div>
+          <input type="button" value="1" onclick="result.value +='1'">
+          <input type="button" value="2" onclick="result.value +='2'">
+          <input type="button" value="3" onclick="result.value +='3'">
+          <input type="button" value="*" onclick="result.value +='*'">
+        </div>
+
+        <div>
+          <input type="button" value="0" onclick="result.value +='0'">
+          <input type="button" value="00" onclick="result.value +='00'">
+          <input type="button" value="000" onclick="result.value +='000'">
+          <input type="button" value="=" onclick="result.value =  operator_num()">
+        </div>
+
+
+        </form>
+      </div>
+    </div>
+	
+  </body>
+  <script src="calc.js"></script>
+</html>
